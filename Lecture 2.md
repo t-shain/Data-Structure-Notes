@@ -6,7 +6,7 @@
 ###### Cloning repositores
 >-Click on top right<br> 
 >-Copy HTTP link<br> 
->-Got to CLion and choose to use token instead of Github login<br> 
+>-Go to CLion and choose to use token instead of Github login<br> 
 
 
 
