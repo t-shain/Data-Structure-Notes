@@ -10,3 +10,20 @@
 >* O(logn) is a very good and has a platau basically where the time does matters less as the data grows.
 >>* O(n logn) is between log n and exponential. 
 >* O(n^n) bad bad bad. 
+#### Examples of complexity 
+>* O(1)
+>>* getters and setters, as well as Computing the average of two doubles
+>* O(logn)
+>>* Binary search of a sorted list
+>>* in general the algorithm increses by one step every time the input size is doubled.
+>* O(N)
+>>* Summing all the values in an integer array/vector
+>>* In general, any algo that has to loop through the length of an array/vector
+>* O(n logn)
+>>* In general, "Divide and Conquer" algos. Split into two halves solve each, then combine agian.
+>* O(n^2)
+>>* In general, anything that has two embedded loops each of N iterations. (where each loop is linear)
+>* O(2^n)
+>>* recursively calculating the Nth number in the Fibonacci sequence.
+>>* **Note Exponential time means for every piece of data given the time doubles, lol**
+>* 
