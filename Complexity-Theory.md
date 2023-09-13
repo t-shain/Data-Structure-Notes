@@ -40,3 +40,10 @@ int sumOfCubes(int n) {
 return partialSum;
 }
 ~~~
+>* This is a linear algo.
+##### Notes
+>* for consecutive statmenets, add their complexities
+>* for conditionals, use the worst complexity of all the branches
+>* for loops multiply the number of times the loop can run by the complexity of the work inside the loop.
+>* __SIMPLIFY__ eliminate constant multiples and smaller terms (smaller terms being addition)
+>>* [ O(3n^2) + O(n) ] becomes [ O(n^2) ]
