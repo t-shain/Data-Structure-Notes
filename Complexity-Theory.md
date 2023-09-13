@@ -46,4 +46,4 @@ return partialSum;
 >* for conditionals, use the worst complexity of all the branches
 >* for loops multiply the number of times the loop can run by the complexity of the work inside the loop.
 >* __SIMPLIFY__ eliminate constant multiples and smaller terms (smaller terms being addition)
->>* [ O(3n^2) + O(n) ] becomes [ O(n^2) ]
+>>* __O(3n^2) + O(n)__ becomes __O(n^2)__
