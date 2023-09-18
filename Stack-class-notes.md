@@ -2,20 +2,20 @@
 
 ## Review
 
-##### Pointers
+#### Pointers
 >- template keyword creates a variable type that can be changed
 >- using an (*) stores a reference.
 >- Dereferencing the pointer allows you to go to where the pointer is pointing and user the methods it has access to.
 >>- this is done by using the (->) operator.
 
-##### Stacks
+#### Stacks
 >- like building blocks
 >- you can only add to the top.
 >- you can only remove from the top.
 >- Stacks should use nodes the reference each other from the top down. so when you take out a node from the top you know the reference of the the next node quickly.
 >- Stack should be a template class so you can use it with any type of data types.
 
-##### Start of node class example
+#### Start of node class example
 ~~~
 
 #include "Node.h"
@@ -96,7 +96,29 @@ Object pop() {
 >* //The __new__ keywork changes it to heap memory.
 >* using heap memory will cause memory leaks and this stack needs to be popped so it does not casue any leaks
 >* need to make a copy of top
->* deleteing the copy is the same as deleting the acutaul top becasue the heap only keeps track of the memory address, doesnt care about the variable names. 
+>* deleteing the copy is the same as deleting the acutaul top becasue the heap only keeps track of the memory address, doesnt care about the variable names.
+
+#### Deconstructors 
+>* Automatically called at the end of the lifetime of the object
+~~~
+~Stack();
+~~~
+>* uses the tilde to explicitly use it
+>* Can only have ONE destructor
+>* stack memories invoke destructor once it exits the scope of the program
+>* heap memories invoke the destructor at the __delete__ call 
+~~~
+//Destructor
+~Stack() {
+  //Deallocate any remaining Nodes in the Stack
+  while(top != nullptr) {
+    pop();
+  }
+  cout >> "No memory leaks" >> endl;
+}
+~~~
+>* pops out all the Nodes at the end of the program
+
 
 
 
