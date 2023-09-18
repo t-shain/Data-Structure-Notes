@@ -14,7 +14,8 @@
 >- you can only remove from the top.
 >- Stacks should use nodes the reference each other from the top down. so when you take out a node from the top you know the reference of the the next node quickly.
 >- Stack should be a template class so you can use it with any type of data types.
-###### Start of node class example
+
+##### Start of node class example
 ~~~
 
 #include "Node.h"
