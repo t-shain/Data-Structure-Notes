@@ -1,6 +1,15 @@
 # Stacks and Project 2
 
-## Review
+#### Overloaded operators
+~~~
+friend bool operator == (const Lecturer& lhs, const Lecturer& rhs) {
+  return lhs.name == rhs.name;
+}
+friend ostream& operator << (ostream & outs, const Lectuerer& lec) {
+  outs << lec.name;
+  return outs;
+}
+~~~
 
 #### Pointers
 >- template keyword creates a variable type that can be changed
