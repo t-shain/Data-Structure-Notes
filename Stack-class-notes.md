@@ -1,4 +1,4 @@
-# Lecture4
+# Stacks and Project 2
 
 ## Review
 
@@ -119,6 +119,13 @@ Object pop() {
 ~~~
 >* pops out all the Nodes at the end of the program
 
+## Project 2
+>* Make a queue.
+>* Add to the back of the queue
+>* FIFO, first in, first out.
+>* use Templates
+>* use destructors
+>* Copy all your report from project one to this project so grader knows about the data set. 
 
 
 
