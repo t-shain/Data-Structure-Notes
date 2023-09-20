@@ -2,8 +2,7 @@
 
 #### Overloaded operators
 >* You can overload operators like (>>) and (==)
->* Overloaded allows you to be specific on the things you compare without having to right specific functions comparing equality
->* 
+>* Overloaded allows you to be specific on the things you compare without having to right specific functions comparing equality 
 ~~~
 friend bool operator == (const Lecturer& lhs, const Lecturer& rhs) {
   return lhs.name == rhs.name;
