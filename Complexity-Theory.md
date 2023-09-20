@@ -54,8 +54,17 @@ return partialSum;
 >>* If I double the input, how much more memory am I using?
 >>* If I double the input how much more space does the algorithm allocate
 >* Auxiliary complexity
->>* How much temporary space is being used (temp variables)
+>>* How much temporary space is being used (temp variables),  The extra space that is taken by an algorithm temporarily to finish its work.
 >* Auxillary, Time and Space complexity all are represented with Big-Oh notation.
 >* Complexities with multiple variables
 >>* Sometimes there are two independent variables at play that will affect the complexity of the algorithm.
 >>* Could get complexities like O(N + K), O(N * K), O(N^K)
+
+##### Example algos to track complexity
+>* __Maximum Subsequence__ the highest sum you can get when going through an array/vector.
+># Max Sub algo 1
+>>* This maxSub1 algo has a time complexity of O(N^3)
+>>* auxiliary complexity is constant -> O(1)
+>>* space complexity is also constant, becasue the vextor is passed in by reference. -> O(1)
+># Max Sub algo 2
+>* has time complexity of O(N^2)
