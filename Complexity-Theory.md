@@ -62,9 +62,9 @@ return partialSum;
 
 ##### Example algos to track complexity
 >* __Maximum Subsequence__ the highest sum you can get when going through an array/vector.
-># Max Sub algo 1
+>###### Max Sub algo 1
 >>* This maxSub1 algo has a time complexity of O(N^3)
 >>* auxiliary complexity is constant -> O(1)
 >>* space complexity is also constant, becasue the vextor is passed in by reference. -> O(1)
-># Max Sub algo 2
+>###### Max Sub algo 2
 >* has time complexity of O(N^2)
