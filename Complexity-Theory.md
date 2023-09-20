@@ -41,9 +41,21 @@ return partialSum;
 }
 ~~~
 >* This is a linear algo.
+
 ##### Notes
 >* for consecutive statmenets, add their complexities
 >* for conditionals, use the worst complexity of all the branches
 >* for loops multiply the number of times the loop can run by the complexity of the work inside the loop.
 >* __SIMPLIFY__ eliminate constant multiples and smaller terms (smaller terms being addition)
 >>* __O(3n^2) + O(n)__ becomes __O(n^2)__
+
+#### More complexity 
+>* Space complexity
+>>* If I double the input, how much more memory am I using?
+>>* If I double the input how much more space does the algorithm allocate
+>* Auxiliary complexity
+>>* How much temporary space is being used (temp variables)
+>* Auxillary, Time and Space complexity all are represented with Big-Oh notation.
+>* Complexities with multiple variables
+>>* Sometimes there are two independent variables at play that will affect the complexity of the algorithm.
+>>* Could get complexities like O(N + K), O(N * K), O(N^K)
