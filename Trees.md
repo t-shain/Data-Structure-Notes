@@ -36,7 +36,7 @@
 >#### Depth-First search
 >>* Start at the root node. Visit it.
 >>* Repeat
->>>* If the current node has a child that has not been visited, visit that node.
+>>>- If the current node has a child that has not been visited, visit that node.
 >>* If there are multiple choose leftmost.
 >>* Otherwise, go to the current node's parent
 >>* end when root has no unvisited children. 
