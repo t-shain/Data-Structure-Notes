@@ -67,6 +67,38 @@ return partialSum;
 >>* auxiliary complexity is constant -> O(1)
 >>* space complexity is also constant, becasue the vextor is passed in by reference. -> O(1)
 >##### Max  sub algo 3
+~~~
+int maxSubArraySum(int arr[], int n)
+{
+    // Base case: when there is only one element in the
+    // array
+    if (n == 1) {
+        return arr[0];
+    }
+    // Recursive case: divide the problem into smaller
+    // sub-problems
+    int m = n / 2;
+    // Find the maximum subarray sum in the left half
+    int left_max = maxSubArraySum(arr, m);
+    // Find the maximum subarray sum in the right half
+    int right_max = maxSubArraySum(arr + m, n - m);
+    // Find the maximum subarray sum that crosses the middle
+    // element
+    int left_sum = INT_MIN, right_sum = INT_MIN, sum = 0;
+    for (int i = m; i < n; i++) {
+        sum += arr[i];
+        right_sum = max(right_sum, sum);
+    }
+    sum = 0;
+    for (int i = m - 1; i >= 0; i--) {
+        sum += arr[i];
+        left_sum = max(left_sum, sum);
+    }
+    int cross_max = left_sum + right_sum;
+    // Return the maximum of the three subarray sums
+    return max(cross_max, max(left_max, right_max));
+}
+~~~
 >* recrusive algo
 >* Time complexity is O(NlogN) a divide and conquer algo. the recursive nature is logN, the two unimbededfor loops add linear N.
 >* auxiliary complexity is O(logN) because if the recursion.
