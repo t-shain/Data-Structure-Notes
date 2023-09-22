@@ -34,6 +34,7 @@
 ### Tree Search/ Traversal
 
 >#### Depth-First search
+> This algo goes straight down the left then works backwards through the tree and pop nodes from a stack if they have already been visited. 
 >>* Start at the root node. Visit it.
 >>* Repeat
 >>>- If the current node has a child that has not been visited, visit that node.
