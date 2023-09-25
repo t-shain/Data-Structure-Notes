@@ -33,7 +33,8 @@
 
 ### Tree Search/ Traversal
 
->#### Depth-First search
+#### Depth-First search
+> Visit a parent before you vist the children
 > This algo goes straight down the left then works backwards through the tree and pop nodes from a stack if they have already been visited. 
 >>* Start at the root node. Visit it.
 >>* Repeat
@@ -42,7 +43,8 @@
 >>* Otherwise, go to the current node's parent
 >>* end when root has no unvisited children.
 
->#### Post order traversal
+#### Post order traversal
+> Visit the children before you vist a parent
 > Similar to DFS but only can store visited nodes if value is a leaf or has no unvisited children.
 > Once it is visited it can be poped.
 > DFS vs Postorder: Postorder is for times when you dont know the size of the parents and need to find the sizes of the smallest things first then work your way back.
