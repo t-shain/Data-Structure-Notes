@@ -34,8 +34,8 @@
 ### Tree Search/ Traversal
 
 #### Depth-First search
-> Visit a parent before you vist the children
-> This algo goes straight down the left then works backwards through the tree and pop nodes from a stack if they have already been visited. 
+>* This algo goes straight down the left then works backwards through the tree and pop nodes from a stack if they have already been visited.
+>>* __Visit a parent before you vist the children__
 >>* Start at the root node. Visit it.
 >>* Repeat
 >>>- If the current node has a child that has not been visited, visit that node.
@@ -44,8 +44,8 @@
 >>* end when root has no unvisited children.
 
 #### Post order traversal
-> Visit the children before you vist a parent
 > Similar to DFS but only can store visited nodes if value is a leaf or has no unvisited children.
+>* __Visit the children before you vist a parent__ <br>
 > Once it is visited it can be poped.
 > DFS vs Postorder: Postorder is for times when you dont know the size of the parents and need to find the sizes of the smallest things first then work your way back.
 >> DFS is for searching for an object in a tree. 
