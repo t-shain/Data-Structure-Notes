@@ -42,6 +42,18 @@
 >>* If there are multiple choose leftmost.
 >>* Otherwise, go to the current node's parent
 >>* end when root has no unvisited children.
+~~~
+               1
+             /   \
+            /     \
+           2       3
+          /      /   \
+         /      /     \
+        4      5       6
+              / \
+             /   \
+            7     8
+~~~
 
 #### Post order traversal
 >* Similar to DFS but only can store visited nodes if value is a leaf or has no unvisited children.
@@ -82,5 +94,11 @@ Adding (+)
 Removing (-)
 >+ When removing a leaf node you can just delete it.
 >+ When you have one child it replaces the node you remove.
+>+ If a node has multiple children and grandchildren you can either move up smallest value from right subtree or largest value from left subtree.
+
+#### Code for Binary search tree
+>>###### NOTE:
+>>- __Insertion__ does not change the structure just adds leafs to the end of the tree.
+>>- __Deletion__ works differently for one child and two child parents.
 
 
