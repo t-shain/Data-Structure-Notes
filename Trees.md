@@ -101,4 +101,21 @@ Removing (-)
 >>- __Insertion__ does not change the structure just adds leafs to the end of the tree.
 >>- __Deletion__ works differently for one child and two child parents.
 
-
+### AVL Trees
+>* Idental to Binary search trees but add a rule.
+>* For each node in the tree, the height (number of gerations) of the left and right subtrees can differ at most by 1.
+~~~
+               1
+             /   \
+            /     \
+           2       3
+                 /   \
+                /     \
+               4       5        
+~~~
+>* __Inserting__ Need to check if its still an AVL tree after every insertion.
+>>* Single rotations to fix unbalanced nodes.
+>>* Double rotation the grandchild replaces the problem node to make it balanced.
+>>* TO determin which rotation you look at the path from the problem node to its farthest leaft.
+-If the path goes in the __same direction__ for the first two generations you do a single rotation (ll, rr).
+-If it goes in different directions (lr, rl) do a __double rotation__. 
