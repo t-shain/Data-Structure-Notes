@@ -9,10 +9,10 @@
 >* These filled binary trees can be stored in an array/ vector
 >*This table shows the index of a BS with the second row being the index of its left most child. 
 
-| A | B | C | D |
-|---|---|---|---|
-| 1 | 2 | 3 | 4 |
-| 2 | 4 | 6 | 8 |
+| Node Name | A | B | C | D |
+|---|---|---|---|---|
+| Index | 1 | 2 | 3 | 4 |
+| Index of left most child | 2 | 4 | 6 | 8 |
 
 #### Heap-Order Property
 >* **For each node with value X, all of its children have values less than or equal to X.**
