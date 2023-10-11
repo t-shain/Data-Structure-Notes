@@ -12,4 +12,14 @@
 __NO...This means its an unstable algorithm.__
 
 ### Bubble Sort
+>- stable algo
 >- goes through pair of elements to see if those two are in order if they are then it goes to the next two, if not then it swaps them. 
+>>- moves larger elements quickly to the back, and small elements slowly towards the front.
+>- Uses when you have a list that is __almost sorted__ it can stop earlier than other algo's.
+>- Swapping uses a three line swap.
+>- worst case is when your smallest value is on the far right side. 
+~~~
+copy = vec[i];
+vec[i] = vec[i+1];
+vec[i + 1] = copy;
+~~~
