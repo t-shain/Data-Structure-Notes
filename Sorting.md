@@ -29,4 +29,6 @@ vec[i + 1] = copy;
 ### Merge Sort
 * The idea is to split a vector into two halves and check linearly the first elements in each list, whichever one is less goes first.
 * Starts with each item being its own sorted list and builds up to two large vectors.
-* Is a stable algo 
+* Is a stable algo
+* Needs temp memory for all the copied vectors of the og vector.
+* When making merge assume the recursive calls will get your vector to two sorted halves. Then add each front element to the full sorted list. 
