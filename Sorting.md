@@ -23,6 +23,7 @@ copy = vec[i];
 vec[i] = vec[i+1];
 vec[i + 1] = copy;
 ~~~
+
 ### Selection sort
 * Compares the first value with the rest if there is a smaller value it swaps with it. Then moves to the next value and does the same thing. It does the n-1 times where n is the size of the vector. 
 
@@ -31,4 +32,15 @@ vec[i + 1] = copy;
 * Starts with each item being its own sorted list and builds up to two large vectors.
 * Is a stable algo
 * Needs temp memory for all the copied vectors of the og vector.
-* When making merge assume the recursive calls will get your vector to two sorted halves. Then add each front element to the full sorted list. 
+* When making merge assume the recursive calls will get your vector to two sorted halves. Then add each front element to the full sorted list.
+* Merege sort has a time complexity of O(nlogn) on par with heap sort.
+>* Lisas version has a auxillary complexity of linear O(nlogn) but it can be reduced to linear if you pass through the temp vector through the recursive calls.
+
+### Project Four notes
+* Read counts should be higher then write counts
+* Pass the reads integer by reference into the algos
+* Setting timers is a fire extra credit option.
+
+### Quick Sort
+* Looks at first element then scans the rest of the vector and partitions the vector depending on the first value. Then does the same thing for the two partitions
+  
