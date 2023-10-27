@@ -42,5 +42,8 @@ vec[i + 1] = copy;
 * Setting timers is a fire extra credit option.
 
 ### Quick Sort
-* Looks at first element then scans the rest of the vector and partitions the vector depending on the first value. Then does the same thing for the two partitions
+* Looks at first element then scans the rest of the vector and partitions the vector depending on the first value. Then does the same thing for the two partitions.
+* It is an unstable algo, but there is an implamentation the requires more memory that is stable. 
+* If you have good partitions you get time complexity of O(nlogn) if you have bad partitions you get O(n^2)
+* Auxillary complexity is constant. 
   
