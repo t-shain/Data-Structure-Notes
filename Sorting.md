@@ -45,5 +45,18 @@ vec[i + 1] = copy;
 * Looks at first element then scans the rest of the vector and partitions the vector depending on the first value. Then does the same thing for the two partitions.
 * It is an unstable algo, but there is an implamentation the requires more memory that is stable. 
 * If you have good partitions you get time complexity of O(nlogn) if you have bad partitions you get O(n^2)
-* Auxillary complexity is constant. 
-  
+* Auxillary complexity is constant.
+
+### Other sorting algos
+* _Bucket Sort_
+>* Create a bucket for each value. Go through the list and add each element to the new appropriate bucket. (Like sorting playing cards cards)
+>* Can be used with other sorting algos
+* _Radix Sort_
+>* Uses integers in numbers to sort them.
+>* Goes throught the ones digit for each number and resorts just by that first integer. Then moves to the tens, hundereds, thousands however long needed for all your data.
+>* Basically a specific type of bucket sort.
+
+### Sorting tradeoffs 
+* You may need an algo to be stable (Bubble, Insertion, Merge, Quick) then there is a time vs memory tradeoff.
+* You may need an algo to be fast (Merge, Quick, Heap)
+* The use cases can differ depending on what is needed. 
