@@ -31,3 +31,40 @@ Constructor(function<string(int)> func) {
 }
 ~~~
 * We can use this idea to help make Hashing.
+* We also need some way of not returning something in a function if we have do not have that object at that index.
+  * basically we want to return a null value.
+  
+### Optionals
+* This data type lets you return a value weither or not something is in that value.
+* Is important becasue we dont need zeros to place hold in our horner hash table.
+~~~
+#include <optional>
+std::nullOpt;
+
+optional<int> myOptInt = nullopt;
+if(myOptInt) {
+  cout << "Int value is" << *myOptInt;
+  //need to access optional with asteristcs because its basically a pointer.
+  cout << endl;
+} else {
+  return nullopt;
+}
+~~~
+### Ways to put all values in hash tables
+
+>### Closed addressing 
+> In this once you get an index you WILL put that iteam in that index.
+>* Seperate Chaining
+  >* If you get a collison you link that value to the value that it collided with
+~~~
+0:5
+1:2 <- 3
+2:
+3:8 <- 7 <- 12
+~~~
+  
+
+### BUILT IN LISTS!
+~~~
+vector<list<Hashable>>> 
+~~~
